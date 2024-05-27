@@ -1,0 +1,16 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form asp-controller="Login" asp-action="Login" method="post">
+        <p>Please enter your first name and email:</p>
+        <input type="text" name="Name" placeholder="Name" required>
+        <input type="text" name="mail" placeholder="example@gmail.com" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="text-left">
+        <p>If you don't have an account click <a asp-controller="Home" asp-action="Signup">Sign Up</a> to make a new account.</p>
+    </div>
+</body>

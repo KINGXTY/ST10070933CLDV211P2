@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "My Work Page";
+}
+
+<div class="text-left" style="margin-left: -200px;">
+    <h1 class="display-4">My Work</h1>
+    <p>With a focus on global accessibility, scalability, and security, we have crafted a platform that offers a seamless shopping experience for our users.</p>
+    <p>Our database schema is meticulously designed to efficiently manage product information and user data, while also allowing for future growth.</p>
+    <p>As we continue to evolve, we are committed to enhancing the user experience with advanced services and functionalities. </p>
+    <p>From search capabilities to notifications, serverless services, and automation, we strive to offer innovative features that elevate your shopping experience.</p>
+    <p>Join us on our journey to celebrate craftsmanship and creativity from every corner of the world.</p>
+    <p>Explore KhumaloCraft Emporium and discover the beauty of handcrafted products today.</p>
+    <p>Product list:</p>
+    <p>
+        Handcrafted Ceramic Mugs<br />
+        <br>Qty:1</br>
+        R25
+    </p>
+    <p>
+        Handcrafted Ceramic Vase<br />
+        <br>Qty:1</br>
+        R250
+    </p>
+    <p>
+        Handcrafted Ceramic Jug<br />
+        <br>Qty:1</br>
+        R60
+    </p>
+    <img src="~/css/images/myworkimg1.jpg" alt="handc" style="float: right; width: 250px; height: centre; margin-left: 200px;margin-right:300px; margin-top:-300px;">
+    <img src="~/css/images/ceramic-handmade.jpg" alt="handc" style="float: right; width: 250px; height: centre; margin-left: 200px;margin-right:300px; margin-top:-100px;">
+    <img src="~/css/images/mug.png" alt="handc" style="float: right; width: 250px; height: centre; margin-left: 200px;margin-right:-450px; margin-top:-550px;">
+    <div class="hContent">
+        <form asp-controller="Home" asp-action="Index" method="post">
+            <div class="hBanner">
+            </div>
+            <p>Select products below:</p>
+            <select name="Name" required>
+                <!--Added a drop down for Product-->
+                <option value="">Select product</option>
+                <option value="Handcrafted Ceramic Mugs">Handcrafted Ceramic Mugs R25</option>
+                <option value="Handcrafted Ceramic Vase">Handcrafted Ceramic Vase R250</option>
+                <option value="Handcrafted Ceramic Jug">Handcrafted Ceramic Jug R60</option>
+            </select>
+            <select name="Price" required>
+                <!--Added a drop down for Product-->
+                <option value="">Select product</option>
+                <option value="Handcrafted Ceramic Mugs"> R25</option>
+                <option value="Handcrafted Ceramic Vase"> R250</option>
+                <option value="Handcrafted Ceramic Jug"> R60</option>
+            </select>
+            <select name="Category" required>
+                <!--Added a drop down for Category-->
+                <option value="">Select Category</option>
+                <option value="Cups">Cups</option>
+                <option value="Bowls">Bowls</option>
+                <option value="Jugs">Jugs</option>
+                <option value="Vases">Vases</option>
+            </select>
+            <select name="Availability" required>
+                <!--Added a drop down for Availability-->
+                <option value="">Select Availability</option>
+                <option value="In Stock">In Stock</option>
+                <option value="Out of Stock">Out of Stock</option>
+            </select>
+            <button type="Confirm">Confirm</button>
+        </form>
+        <a asp-controller="Home" asp-action="Transactions">Past orders</a> 
+        
+    </div>
+
+</div>

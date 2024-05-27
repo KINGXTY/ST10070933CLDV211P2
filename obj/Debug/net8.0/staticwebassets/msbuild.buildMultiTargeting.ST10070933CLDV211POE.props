@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ST10070933CLDV211POE.props" />
+</Project>

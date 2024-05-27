@@ -1,0 +1,38 @@
+html {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 55px;
+}
+/*Setting background color*/
+body {
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #A9A9A9;
+}
+
+
+/*styling for the footer for all pages*/
+.footer {
+    background-color: #D7CAB7;
+    color: white;
+    padding: 5px;
+}

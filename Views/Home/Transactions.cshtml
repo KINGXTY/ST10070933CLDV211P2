@@ -1,0 +1,34 @@
+﻿@model List<TransactionModel>
+
+@{
+    ViewData["Title"] = "Past Orders";
+}
+
+<h2>Past Orders</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Product</td>
+                    <td>@item.Category</td>
+                    <td>@item.Availability</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No orders have been placed yet.</p>
+}
